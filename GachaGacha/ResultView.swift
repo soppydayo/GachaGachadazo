@@ -17,7 +17,7 @@ struct ResultView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 350, height: 350)
-                .offset(y: CGFloat(ImageOffset) - 50)
+                .offset(y: CGFloat(imageOffset) - 50)
                 .onAppear {
                     withAnimation(.easeInOut(duration: 1.0).repeatForever(autoreverses: true)){
                         imageOffset = animationHeight
